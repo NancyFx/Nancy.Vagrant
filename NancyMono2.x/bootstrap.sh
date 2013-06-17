@@ -12,4 +12,4 @@ rm -rf /etc/motd
 echo Nancy on Mono >> /etc/motd
 echo +++++++++++++ >> /etc/motd
 echo >> /etc/motd
-echo The directory you are no in is shared with the host \(the same directory as you copied the vagrantfile into\) - on your local machine clone the source as you would normally then inside this VM type \"cd \[directory name\]\" then \"rake mono\" and observe the output. >> /etc/motd
+echo The directory you are now in is shared with the host \(the same directory as you copied the vagrantfile into\) - on your local machine clone the source as you would normally then inside this VM type \"cd \[directory name\]\" then \"rake mono\" and observe the output. >> /etc/motd
