@@ -2,15 +2,19 @@
 MONO3_VERSION="mono-3.0.12"
 MONO3_BINARY="http://download.mono-project.com/sources/mono/$MONO3_VERSION.tar.bz2"
 
-apt-get update
+#apt-get update
 #apt-get upgrade
 apt-get install -y ruby
-apt-get install -y curl
+apt-get install -y wget
+apt-get install -y build-essentials
+apt-get install -y gettext
 
 echo "Grabbing: $MONO3_BINARY"
-curl $MONO3_BINARY -o - | tar xj -C "~/mono" -f -
+wget $MONO3_BINARY
+tar -xjf $MONO3_VERSION.tar.bz2
 
-cd "~/mono/$MONO3_VERSION"
+cd "$MONO3_VERSION"
+
 ./configure --prefix=/usr/local
 make
 make install
