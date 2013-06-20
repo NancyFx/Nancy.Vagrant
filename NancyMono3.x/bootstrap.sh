@@ -6,7 +6,7 @@ MONO3_BINARY="http://download.mono-project.com/sources/mono/$MONO3_VERSION.tar.b
 #apt-get upgrade
 apt-get install -y ruby
 apt-get install -y wget
-apt-get install -y build-essentials
+apt-get install -y build-essential
 apt-get install -y gettext
 
 echo "Grabbing: $MONO3_BINARY"
