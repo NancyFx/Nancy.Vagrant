@@ -1,6 +1,6 @@
 #!/bin/bash
-MONO3_VERSION="mono-3.0.12"
-MONO3_BINARY="http://download.mono-project.com/sources/mono/$MONO3_VERSION.tar.bz2"
+MONO3_FILENAME="mono-3.0.12-bin.tar.bz2"
+MONO3_BINARY="http://samples.nancyfx.org/content/$MONO3_FILENAME"
 
 #apt-get update
 #apt-get upgrade
@@ -10,14 +10,10 @@ apt-get install -y build-essential
 apt-get install -y gettext
 
 echo "Grabbing: $MONO3_BINARY"
-wget $MONO3_BINARY
-tar -xjf $MONO3_VERSION.tar.bz2
-
-cd "$MONO3_VERSION"
-
-./configure --prefix=/usr/local
-make
-make install
+wget -q $MONO3_BINARY
+tar xk -C "/opt" -f $MONO3_FILENAME
+echo export PATH="$PATH:/opt/mono/bin" >> /etc/profile.d/mono.sh
+echo export LD_LIBRARY_PATH="/opt/mono/lib" >> /etc/profile.d/mono.sh
 
 gem install rake
 gem install albacore
