@@ -1,7 +1,7 @@
 Nancy.Vagrant
 =============
 
-Vagrant scripts for quickly setting up a Linux/Mono environment for testing/bugfixing Mono releated issues with Nancy.
+Vagrant scripts for quickly setting up a Linux/Mono environment, on Windows or Mac OX, for testing/bugfixing Mono releated issues with Nancy.
 
 Using these scripts you can run the Nancy build and tests in either a Mono 2.x, or Mono 3.x Linux environment, without any knowledge of Linux, and while still being able to edit the files in Visual Studio (or your editor of choice) on your local machines. The scripts are designed to lower the bar when it comes to resolving problems Mono problems with pull requests.
 
