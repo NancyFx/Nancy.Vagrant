@@ -26,7 +26,7 @@ There's a few steps here, but it's very very straightforward. All commands that 
 8. Type "rake mono" - this will build the solution and run all the tests. If a test fails, or something fails to build, just scroll up the build log until you can see what went wrong. There's a lot of output generated, but it should be obvious what's gone wrong.
 9. Fire up Visual Studio on your local machine (or your editor of choice), open the SLN from the directory you cloned it to (the one that also contains the vagrantfile and bootstrap.sh) and make any edits you need to fix the problem, or help narrow it down.
 10. Go back to step 8 and repeat - because the directory is shared between the host and the virtual, any changes you make locally will be automatically picked up by the build inside the virtual machine.
-11. When you're all fixed, type "exit" into the virtual machien command prompt and it will drop you back into your local command prompt. Commit your changes to git as you would normally and you're all done.
+11. When you're all fixed, type "exit" into the virtual machine command prompt and it will drop you back into your local command prompt. Commit your changes to git as you would normally and you're all done.
 
 When You're Finished
 ====================
