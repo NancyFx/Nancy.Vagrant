@@ -17,8 +17,8 @@ Getting Started
 There's a few steps here, but it's very very straightforward. All commands that you have to type are in quotes - but don't type the quotes :-)
 
 1. Either clone this repository locally, or manually grab the vagrantfile and bootstrap.sh from the folder representing the version of Mono you want to test on.
-2. Drop to a command prompt - we'd recomment using something like [Console2](http://sourceforge.net/projects/console/) if you're going to do a lot of command line work.
-3. Switch to the directory containing the vagrantfile and bootstrap.sh
+2. Drop to a command prompt - we'd recommend using something like [Console2](http://sourceforge.net/projects/console/) if you're going to do a lot of command line work.
+3. Switch to the directory containing the vagrant-file and bootstrap.sh
 4. Type `vagrant up`  - this will download a base virtual machine and set it up for you. It takes a few minutes, so go grab a beverage of your choosing.
 5. Once that's finished, clone (or copy) your Nancy repository into the same directory as the vagrantfile and bootstrap.sh. This directory is going to be shared between the host machine (your actual machine), and the virtual machine that you're going to be using to run the build.
 6. Type `vagrant ssh` - this will connect to the virtual machine and drop you to a Linux command prompt with some simple instructions.
@@ -39,6 +39,7 @@ Some Things To Note
 If you want to move around inside the virtual machine there's some very simple unix commands/things you will need to know.
 
 * Case sensitivity - the file system is case sensitive, so `cd nancy` is not the same thing as `cd Nancy` - if it tells you a file or folder doesn't exist, check your casing.
+* `pwd` - tells you the name and path of your current directory, which can be great if you feel lost.
 * `ls` - shows the files in the current directory, it's the equivilent of `dir` in the Windows command prompt.
 * `cd` - changes directory, bear in mind the case sensitivity issue above, and the fact you have to put a space after the `cd` (which you don't have to in Windows). Also the directory separator is a forward slash `/` not a backslash `\` like it is on Windows.
 * If you want to get back to the shared directory (where the vagrantfile, bootstrap.sh and your cloned code is), just type `cd /vagrant`
