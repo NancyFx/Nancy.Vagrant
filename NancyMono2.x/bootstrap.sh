@@ -4,7 +4,7 @@ apt-get upgrade
 apt-get install -y mono-complete
 apt-get install -y ruby
 gem install rake
-gem install albacore
+gem install albacore --version "~> 1.0.rc"
 cd /vagrant
 echo cd \/vagrant > /home/vagrant/.bashrc
 rm -rf /etc/motd
