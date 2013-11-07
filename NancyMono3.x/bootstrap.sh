@@ -4,7 +4,7 @@ MONO3_BINARY="http://samples.nancyfx.org/content/$MONO3_FILENAME"
 
 #apt-get update
 #apt-get upgrade
-apt-get install -y ruby
+apt-get install -y ruby1.9.3
 apt-get install -y wget
 apt-get install -y build-essential
 apt-get install -y gettext

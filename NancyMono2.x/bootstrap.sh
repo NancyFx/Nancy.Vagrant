@@ -2,7 +2,7 @@
 apt-get update
 apt-get upgrade
 apt-get install -y mono-complete
-apt-get install -y ruby
+apt-get install -y ruby1.9.3
 gem install rake
 gem install albacore --version "~> 1.0.rc"
 cd /vagrant
