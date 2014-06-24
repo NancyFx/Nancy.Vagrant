@@ -16,7 +16,7 @@ echo export PATH="$PATH:/opt/mono/bin" >> /etc/profile.d/mono.sh
 echo export LD_LIBRARY_PATH="/opt/mono/lib" >> /etc/profile.d/mono.sh
 
 gem install rake
-gem install albacore --version "~> 1.0.rc"
+gem install albacore --version "1.0.0.rc2"
 cd /vagrant
 echo cd \/vagrant > /home/vagrant/.bashrc
 rm -rf /etc/motd
