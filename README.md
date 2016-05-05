@@ -11,6 +11,14 @@ Initial Setup / Prerequisites
 1. Install Vagrant from http://www.vagrantup.com/
 2. Install VirtualBox - NOTE: If you are running on Windows 8 please make sure not to install the network drivers, as explained in this post: http://www.grumpydev.com/2013/06/19/windows-8-hyper-v-virtualbox-vagrant-and-hanging-on-boot/
 
+Updates NancyMono4.x
+====================
+- Changed the base base to be `ubuntu/trusty64`
+- Installed [rvm](https://rvm.io/integration/vagrant) and ruby 2.1.2 to ensure a consistent build environment 
+- Installed mono via apt-get route
+- Added a hello.cs into `/vagrant` directory to test that this has all worked
+
+
 Getting Started
 ===============
 
